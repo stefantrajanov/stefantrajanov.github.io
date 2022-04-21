@@ -315,8 +315,8 @@ a {
 }
 
 
-/* Sticky Navigation */
-.et-hero-tabs, .et-slide {
+/* Sticky Navigation with Cyber buttons */
+.et-hero-tabs, .et-slideSticky {
   
     display: flex;
     flex-direction: column;
@@ -460,7 +460,7 @@ a {
 
 
 
-.et-hero-tab-slider {
+.et-hero-tab-sliderSticky {
     position: absolute;
     width: 0;
     height: 6px;
@@ -468,10 +468,10 @@ a {
     transition: left 0.3s ease;
 }
 @media (min-width: 800px) {
-    .et-hero-tabs h1, .et-slide h1 {
+    .et-hero-tabs h1, .et-slideSticky h1 {
         font-size: 3rem;
    }
-    .et-hero-tabs h3, .et-slide h3 {
+    .et-hero-tabs h3, .et-slideSticky h3 {
         font-size: 1rem;
    }
     .et-hero-tab {
@@ -489,7 +489,7 @@ a {
   }
 
   .particletxt,
-  .slider {
+  .sliderSticky {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -502,7 +502,7 @@ a {
   }
   
   .particletxt h1,
-  .slider h1 {
+  .sliderSticky h1 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 5vw;
     margin: 0;
@@ -517,7 +517,7 @@ a {
     color: #ff0266;
   }
   
-  .slider h2 {
+  .sliderSticky h2 {
     font-size: 2vw;
     letter-spacing: 0.3rem;
     font-family: "Glitch", sans-serif;
@@ -648,13 +648,11 @@ a {
   width: 0;
 }
 
-.level.html { background-color: #08fdd8; border-color: #08fdd8; }
-.level.css { background-color: purple; border-color: purple; }
-.level.jquery { background-color: red; border-color: red; }
-.level.javascript { background-color: blueviolet; border-color:blueviolet; }
-.level.ajax { background-color: #492a08; border-color: #3e2101; }
-.level.php { background-color: #08fdd8; border-color: #08fdd8; }
-.level.mysql { background-color: #261400; border-color: #222; }
+.level.front-end { background-color: #08fdd8; border-color: #08fdd8; }
+.level.back-end { background-color: purple; border-color: purple; }
+.level.python { background-color: red; border-color: red; }
+.level.react { background-color: blueviolet; border-color:blueviolet; }
+
 
 
 

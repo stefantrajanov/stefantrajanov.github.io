@@ -136,11 +136,11 @@ function enableScroll() {
 
 //Reset scroll top
 
-history.scrollRestoration = "manual";
+// history.scrollRestoration = "manual";
 
-$(window).on('beforeunload', function () {
-    $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function () {
+//     $(window).scrollTop(0);
+// });
 
 // Contact form
 

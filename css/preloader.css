@@ -149,7 +149,7 @@
     left: -2px;
     text-shadow: -5px 0 magenta;
     background: black;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     animation: noise-1 3s linear infinite alternate-reverse, preloaderGlitch 5s 5.05s infinite;
 }
@@ -159,7 +159,7 @@
     left: 2px;
     text-shadow: -5px 0 lightgreen;
     background: black;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     animation: noise-2 3s linear infinite alternate-reverse, preloaderGlitch 5s 5s infinite;
 }

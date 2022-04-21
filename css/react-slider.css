@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|IBM+Plex+Sans:500&display=swap');
+ :root {
+	 --color-primary: #6b7a8f;
+	 --color-secondary: #101118;
+	 --color-accent: transparent;
+	 --color-focus: #6d64f7;
+	 --base-duration: 600ms;
+	 --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+  }
+
+
+a{
+    color:white;
+    
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+ #app {
+	 align-items: center;
+	 display: flex;
+	 /* height: 100%; */
+	 justify-content: center;
+	 /* overflow-x: hidden; */
+	 width: 100%;
+}
+
+ .visuallyhidden {
+	 clip: rect(1px, 1px, 1px, 1px);
+	 height: 1px;
+	 overflow: hidden;
+	 position: absolute !important;
+	 white-space: nowrap;
+	 width: 1px;
+}
+ .icon {
+	 fill: var(--color-primary);
+	 width: 100%;
+}
+ .slider__controls {
+	 display: flex;
+	 justify-content: center;
+	 position: absolute;
+	 top: calc(100% + 1rem);
+	 width: 100%;
+}
+ .slider__controls{
+	 --size: 3rem;
+	 align-items: center;
+	 background-color: transparent;
+	 border: 3px solid transparent;
+	 border-radius: 100%;
+	 display: flex;
+	 height: var(--size);
+	 padding: 0;
+	 width: var(--size);
+}
+ .slider {
+	 --slide-size:50vmin;
+	 --slide-margin: 5vmin;
+	 height: var(--slide-size);
+	 margin: 100px;
+	 position: relative;
+	 width: var(--slide-size);
+}
+ .slider__wrapper {
+	 display:flex;
+	 margin: 0 calc(var(--slide-margin) * -1);
+	 position: absolute;
+	 transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
+}
+ .slide {
+	 align-items: center;
+	 color: white;
+	 display: flex;
+	 flex: 1;
+	 flex-direction: column;
+	 height: var(--slide-size);
+	 justify-content: center;
+	 margin: 0 var(--slide-margin);
+	 opacity: 0.25;
+	 position: relative;
+	 text-align: center;
+	 transition: opacity calc(var(--base-duration) / 2) var(--base-ease), transform calc(var(--base-duration) / 2) var(--base-ease);
+	 width: var(--slide-size);
+	 z-index: 1;
+}
+ .slide--previous:hover, .slide--next:hover {
+	 opacity: 0.5;
+}
+ .slide--previous {
+	 cursor: w-resize;
+}
+ .slide--previous:hover {
+	 transform: translateX(2%);
+}
+ .slide--next {
+	 cursor: e-resize;
+}
+ .slide--next:hover {
+	 transform: translateX(-2%);
+}
+ .slide--current {
+	 --x: 0;
+	 --y: 0;
+	 --d: 50;
+	 opacity: 1;
+	 pointer-events: auto;
+	 user-select: auto;
+}
+ @media (hover: hover) {
+	 .slide--current:hover .slide__image-wrapper {
+		 transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+	}
+}
+ .slide__image-wrapper {
+	 background-color: var(--color-accent);
+	 border-radius: 1%;
+	 height: 100%;
+	 left: 0%;
+	 overflow: hidden;
+	 position: absolute;
+	 top: 0%;
+	 transition: transform calc(var(--base-duration) / 4) var(--base-ease);
+	 width: 100%;
+}
+ .slide__image {
+	 --d: 20;
+	 height: 110%;
+	 left: -5%;
+	 object-fit:contain;
+	 opacity: 0;
+	 pointer-events: none;
+	 position: absolute;
+	 top: -5%;
+	 transition: opacity var(--base-duration) var(--base-ease), transform var(--base-duration) var(--base-ease);
+	 user-select: none;
+	 width: 110%;
+}
+ @media (hover: hover) {
+	 .slide--current .slide__image {
+		 transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+	}
+}
+ .slide__headline {
+	 font-size: 8vmin;
+	 font-weight: 600;
+	 position: relative;
+     font-family: 'Cyber';
+}
+ .slide__content {
+	 --d: 60;
+	 opacity: 0;
+	 padding: 4vmin;
+	 position: relative;
+	 transition: transform var(--base-duration) var(--base-ease);
+     transform: translateX(-100);
+	 visibility: hidden;
+}
+ .slide--current .slide__content {
+	 animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
+	 visibility: visible;
+}
+ @media (hover: hover) {
+	 .slide--current .slide__content {
+		 transform: translate(calc(var(--x) / var(--d) * -1px), calc(var(--y) / var(--d) * -1px));
+	}
+}
+ .slide__content > * + * {
+	 margin-top: 2rem;
+}
+ @keyframes fade-in {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+
+
+/* Cyber Buttons */
+  
+  .reactCybr-btn {
+    --primary: transparent;
+    --shadow-primary: transparent;
+    --primary-hue: 0;
+    --primary-lightness: 50;
+    --color: hsl(0, 0%, 100%);
+    --font-size: 26px;
+    --shadow-primary-hue: 180;
+    --label-size: 9px;
+    --shadow-secondary-hue: 60;
+    --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+    --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+    --border: 4px;
+    --shimmy-distance: 5;
+    --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+    --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+    --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+    --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+    --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+    --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+    font-family: 'Cyber', sans-serif;
+    color: var(--color);
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: var(--font-size);
+    outline: transparent;
+    letter-spacing: 2px;
+    position: relative;
+    font-weight: 700;
+    border: 0;
+    min-width: 300px;
+    height: 75px;
+    line-height: 75px;
+    transition: background 0.2s;
+  }
+  
+  .reactCybr-btn:hover {
+    --primary: transparent;
+  }
+  .reactCybr-btn:active {
+    --primary: transparent;
+  }
+  
+  .reactCybr-btn:after,
+  .reactCybr-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: var(--clip);
+    z-index: -1;
+  }
+  
+  .reactCybr-btn:before {
+    background: var(--shadow-primary);
+    transform: translate(var(--border), 0);
+  }
+  
+  .reactCybr-btn:after {
+    background: var(--primary);
+  }
+  
+  .reactCybr-btn__tag {
+    position: absolute;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    line-height: 1;
+    bottom: -5%;
+    right: 5%;
+    font-weight: normal;
+    color: hsl(0, 0%, 0%);
+    font-size: var(--label-size);
+  }
+  
+  .reactCybr-btn__glitch {
+    position: absolute;
+    top: calc(var(--border) * -1);
+    left: calc(var(--border) * -1);
+    right: calc(var(--border) * -1);
+    bottom: calc(var(--border) * -1);
+    background: var(--shadow-primary);
+    text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+    clip-path: var(--clip);
+    animation: cyberrGlitch 2s infinite;
+    display: none;
+  }
+  
+  .reactCybr-btn:hover .reactCybr-btn__glitch {
+    display: block;
+  }
+  
+  .reactCybr-btn__glitch:before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * 1);
+    right: calc(var(--border) * 1);
+    bottom: calc(var(--border) * 1);
+    left: calc(var(--border) * 1);
+    clip-path: var(--clip);
+    background: var(--primary);
+    z-index: -1;
+  }
+  
+  .reactCybr-btn:nth-of-type(2) {
+    --primary-hue: 260;
+  }
+  
+  
