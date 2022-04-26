@@ -1,28 +1,30 @@
+const buttontxt = "View Project"
+
 const slideData = [
     {
         index: 0,
         headline: 'Sintehno',
-        button: 'View Site',
+        button: buttontxt,
         link: 'https://sintehno.com.mk/',
         src: '/images/Car.png'
     },
     {
         index: 1,
         headline: 'University',
-        button: 'View Site',
+        button: buttontxt,
         link: 'https://sintehno.com.mk/',
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg'
     },
     {
         index: 2,
-        headline: 'Woodchiper',
+        headline: buttontxt,
         button: 'View Site',
         link: 'https://sintehno.com.mk/',
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg'
     },
     {
         index: 3,
-        headline: 'Stocks',
+        headline: buttontxt,
         button: 'View Site',
         link: 'https://sintehno.com.mk/',
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg'
