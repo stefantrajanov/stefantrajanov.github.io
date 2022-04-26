@@ -1167,3 +1167,19 @@ body .cybr-btn + .cybr-btn {
 
 
 
+
+
+.header1 {
+  font-family: "Cyber";
+  font-size: 3vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.3rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+.header1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
