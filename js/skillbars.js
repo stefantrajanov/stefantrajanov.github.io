@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('.skill').each(function () {
                 var el = $(this);
                 var level = el.find('.level').attr('data-level');
-                el.find('.level').delay(counter * 400).animate({
+                el.find('.level').delay(counter * 800).animate({
                     width: level + "%"
                 }, 1500, "easeOutBack");
                 counter++;
@@ -24,6 +24,18 @@ $(document).ready(function () {
         }
     }
 
-    animateSkills();
+    $(window).scroll(function () {
+        var top_of_element = $("#skill-bars").offset().top;
+        var bottom_of_element = $("#skill-bars").offset().top + $("#skill-bars").outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+            animateSkills();
+        } else {
+            // lowerAnimateSkills();
+        }
+    });
+
 
 });

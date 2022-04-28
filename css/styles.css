@@ -1183,3 +1183,11 @@ body .cybr-btn + .cybr-btn {
   transform: translate3d(0, -10px, 22px);
   color: #ff0266;
 }
+
+
+#logo{ 
+/* display: flex;
+justify-content: start;
+align-items: flex-start; */
+transform: scale(10%);
+} 

@@ -17,15 +17,15 @@ const slideData = [
     },
     {
         index: 2,
-        headline: buttontxt,
-        button: 'View Site',
+        headline: 'University',
+        button: buttontxt,
         link: 'https://sintehno.com.mk/',
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg'
     },
     {
         index: 3,
-        headline: buttontxt,
-        button: 'View Site',
+        headline: 'University',
+        button: buttontxt,
         link: 'https://sintehno.com.mk/',
         src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg'
     }
@@ -85,7 +85,7 @@ class Slide extends React.Component {
                 onMouseMove={this.handleMouseMove}
                 onMouseLeave={this.handleMouseLeave}
             >
-                <div className="slide__image-wrapper">
+                <div className="slide__image-wrapper" >
                     <img
                         className="slide__image"
                         alt={headline}
@@ -96,7 +96,7 @@ class Slide extends React.Component {
 
                 <article className="slide__content">
                     {/* <h2 className="slide__headline">{headline}</h2> */}
-                    <button className="slide__action reactCybr-btn">
+                    <button className="slide__action reactCybr-btn" data-aos="fade-in" data-aos-duration="2000">
                         <span aria-hidden class="reactCybr-btn__glitch">{button}</span>
                         <a href={link}>{button}</a></button>
                 </article>
