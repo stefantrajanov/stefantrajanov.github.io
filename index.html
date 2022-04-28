@@ -61,7 +61,7 @@
             _ƎM TUOꓭA
             <span aria-hidden class="et-hero__glitch">About me_</span>
             <span aria-hidden class="et-hero__tag">13N</span></a>
-        <a class="et-hero-tab" href="#tab-flexbox">
+        <a class="et-hero-tab" href="#tab-slider">
             Portofolio
             <span aria-hidden class="et-hero__glitch">Portofolio_</span>
             <span aria-hidden class="et-hero__tag">13N</span></a></a>
@@ -124,7 +124,7 @@
         <!-- About me -->
 
         <!-- Project slider -->
-        <section id="tab-flexbox" data-aos="fade-left">
+        <section id="tab-slider" data-aos="fade-left">
             <div id="app"></div>
         </section>
         <!-- Project slider -->
@@ -189,7 +189,7 @@
         <section id="tab-angular">
             <section id="contact" data-aos="fade-in">
 
-                <h1 class="section-header">Contact</h1>
+                <h1 class="section-header" data-aos="fade-in">Contact</h1>
 
                 <div class="contact-wrapper">
 
@@ -198,20 +198,20 @@
                     <form id="contact-form" class="form-horizontal" role="form">
 
                         <div class="form-group">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" data-aos="fade-right" data-aos-duration="500">
                                 <input style="background: black;" type="text" class="form-control" id="name" placeholder="NAME_" name="name" value="" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" data-aos="fade-right" data-aos-duration="1000">
                                 <input style="background: black;" type="email" class="form-control" id="email" placeholder="EMAIL_" name="email" value="" required>
                             </div>
                         </div>
 
-                        <textarea style="background: black;" class="form-control" rows="10" placeholder="MESSAGE_" name="message" required></textarea>
+                        <textarea style="background: black;" class="form-control" rows="10" data-aos="fade-right" placeholder="MESSAGE_" name="message" required></textarea>
 
-                        <button class="cybr-btn" id="submit" type="submit" value="SEND">
+                        <button class="cybr-btn" id="submit" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" type="submit" value="SEND">
                             Contact<span aria-hidden>_</span>
                             <span aria-hidden class="cybr-btn__glitch">Contact_</span>
                             <span aria-hidden class="cybr-btn__tag">13N</span>
@@ -225,7 +225,7 @@
 
                     <div class="direct-contact-container">
 
-                        <ul class="contact-list">
+                        <ul class="contact-list" data-aos="fade-left">
                             <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Kavadarci, Macedonia </span></i></li>
 
                             <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:trajanovstefan@yahoo.com"
@@ -234,7 +234,7 @@
                         </ul>
 
                         <hr>
-                        <ul class="social-media-list">
+                        <ul class="social-media-list" data-aos="fade-left">
                             <li><a href="#" target="_blank" class="contact-icon">
                                     <i class="fa fa-github" aria-hidden="true"></i></a>
                             </li>
@@ -314,14 +314,6 @@
 
     <!-- Scroll animation script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1500,
-            delay: 500,
-            // once: false,
-            mirror: true
-        });
-    </script>
     <!-- Scroll animation script -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

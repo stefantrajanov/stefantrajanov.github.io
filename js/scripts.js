@@ -1,5 +1,13 @@
-// Disable Scroll on Preloader
+// Scroll animations
+AOS.init({
+    duration: 1500,
+    delay: 500,
+    // once: false,
+    mirror: true
+});
 
+
+// Disable Scroll on Preloader
 document.getElementById("preloader").onwheel = function () {
     disableScroll();
     document.getElementById("status").innerHTML = "disabled";
@@ -86,10 +94,17 @@ new StickyNavigation();
 // When page is loaded do something
 window.addEventListener('load', () => {
 
-    const preloader = document.querySelector('.preloader');
-    enableScroll();
-    preloader.classList.add('preloader-finish')
+    // disable the preloader
+    setTimeout(disablePreloader, 3000);
+    setTimeout(enableScroll, 3000);
 });
+
+// Disable preloader
+function disablePreloader() {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader-finish');
+}
+//
 
 // Disable Enable Scrolling
 // left: 37, up: 38, right: 39, down: 40,

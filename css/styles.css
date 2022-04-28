@@ -673,7 +673,7 @@ a {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
+  font: 300 60px 'Cyber', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -683,6 +683,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: 'Cyber';
   margin: 0 auto;
   padding: 20px;
   position: relative;
@@ -723,7 +724,6 @@ textarea {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -748,7 +748,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 20px 'Cyber', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
   

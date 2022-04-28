@@ -33,7 +33,7 @@ $(document).ready(function () {
         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
             animateSkills();
         } else {
-            // lowerAnimateSkills();
+
         }
     });
 
