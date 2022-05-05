@@ -91,7 +91,7 @@ class StickyNavigation {
 
 new StickyNavigation();
 // Disable Navigation when page is loading
-disableNavigation();
+// disableNavigation();
 
 // When page is loaded do something
 window.addEventListener('load', () => {
@@ -99,7 +99,7 @@ window.addEventListener('load', () => {
     // disable the preloader, enable scroll and navigation.
 
     setTimeout(enableScroll, 3000);
-    setTimeout(enableNavigation, 3000);
+    // setTimeout(enableNavigation, 3000);
     setTimeout(disablePreloader, 3000);
 });
 

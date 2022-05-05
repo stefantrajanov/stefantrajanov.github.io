@@ -20,26 +20,11 @@
     <!-- Boostrap icons -->
 
     <!-- Main styles -->
-    <link rel="stylesheet" href="/css/particle-style.css" />
-    <link rel="stylesheet" href="/css/react-slider.css">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/preloader.css" />
-
-
+    <link rel="stylesheet" href="/css/mobile-css/mobile-particles.css" />
+    <link rel="stylesheet" href="/css/mobile-css/mobile-react.css">
+    <link rel="stylesheet" href="/css/mobile-css/mobile-style.css" />
+    <link rel="stylesheet" href="/css/mobile-css/mobile-preloader.css" />
     <!-- Main styles  -->
-
-    <!-- Redirect to mobile page -->
-    <script type="text/javascript">
-        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-            location.replace("mobile-index.html");
-        }
-    </script>
-    <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "mobile-index.html";
-        }
-    </script>
-    <!-- Redirect to mobile page -->
 
 </head>
 
@@ -63,15 +48,15 @@
     <div class="custom-container">
         <div class="glitch" data-text="STEFAN" data-aos="fade-in">STEFAN</div>
         <div class="glow">STEFAN</div>
-        <p class="subtitle">WORDPRESS EXPERT</p>
-        <p class="subtitle" style="margin: 30px;">FRONT END DEVELOPER</p>
+        <p class="subtitle" data-aos="fade-right">WORDPRESS EXPERT</p>
+        <p class="subtitle" data-aos="fade-in" style="margin: 30px;">FRONT END DEVELOPER</p>
 
     </div>
     <!-- Banner -->
 
     <section class="et-hero-tabs" id="stickyNavigation"></section>
     <!-- Sticky Navigation -->
-    <div class="et-hero-tabs-container">
+    <!-- <div class="et-hero-tabs-container">
         <a class="et-hero-tab" style="transform: scaleX(-1);" href="#tab-es6">
             _ƎM TUOꓭA
             <span aria-hidden class="et-hero__glitch">About me_</span>
@@ -94,7 +79,7 @@
             <span aria-hidden class="et-hero__tag">13N</span></a></a>
         <span class="et-hero-tab-slider"></span>
     </div>
-    </section>
+    </section> -->
     <!-- Sticky Navigation -->
 
     <!-- About me -->
@@ -139,11 +124,10 @@
         <!-- About me -->
 
         <!-- Project slider -->
-        <section id="tab-slider" data-aos="fade-left">
+        <section data-aos="fade-left">
             <div id="app"></div>
         </section>
         <!-- Project slider -->
-
 
         <!-- Skillbars -->
 
@@ -151,17 +135,17 @@
 
             <div class="container">
                 <div class="row row-cols-2">
-                    <div class="col" data-aos="fade-right">
-
-                        <h1 class="header1"> Skills &
-                            Experience</h1>
-                        <p class="lead" data-aos="fade-right" style="color: white;">
-                            I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development and back-end
-                            development, HTML, CSS, JS, Wordpress.
-                        </p>
-                        <p class="lead" data-aos="fade-right">I also have full-stack developer experience with popular open-source CMS like WordPress.</p>
-                        <p class="lead" data-aos="fade-right">For any more details you can contact me and we can discuss it easily, even through the phone.</p>
-
+                    <div class="row" data-aos="fade-right">
+                        <div class="container my-md-5">
+                            <h1 class="header1"> Skills &
+                                Experience</h1>
+                            <p class="lead" data-aos="fade-right" style="color: white;">
+                                I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development and back-end
+                                development, HTML, CSS, JS, Wordpress.
+                            </p>
+                            <p class="lead" data-aos="fade-right">I also have full-stack developer experience with popular open-source CMS like WordPress.</p>
+                            <p class="lead" data-aos="fade-right">For any more details you can contact me and we can discuss it easily, even through the phone.</p>
+                        </div>
                     </div>
                     <div class="col">
                         <div class="skills-holder" id="skill-bars" data-aos="fade-left">
@@ -274,21 +258,8 @@
 
             <!-- Gumball glitch animation -->
         </section>
-        <section class="et-slideSticky" id="tab-other" data-aos="slide-up">
+        <section id="tab-other" data-aos="fade-up">
             <div id="bodymovin"></div>
-            <div class="toolbar" style="visibility: hidden;">
-                <label for="checkbox-handlers" class="checkbox-group">
-                    <input type="checkbox" id="checkbox-handlers" />
-                    <div id="checkbox-handlers-anim"></div>
-                    <span class="checkbox-text">Display Handlers</span>
-                </label>
-                <label for="checkbox-characters" class="checkbox-group">
-                    <input type="checkbox" id="checkbox-characters" />
-                    <div id="checkbox-characters-anim"></div>
-                    <span class="checkbox-text">Pause Characters</span>
-                </label>
-            </div>
-            <div id="glitch-title"></div>
         </section>
         <!-- Gumball glitch animation -->
 
@@ -312,16 +283,6 @@
         </div>
     </div>
     <!-- Footer icons -->
-
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GhQdlIFylQ8" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315"
-        src="https://www.youtube.com/embed/GhQdlIFylQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/GhQdlIFylQ8" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315"
-        src="https://www.youtube.com/embed/GhQdlIFylQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe> -->
-
-
 
     <!-- Gumball fun animation script -->
     <script src="https://labs.nearpod.com/bodymovin/demo/glitcher/glitcher5.js"></script>
@@ -360,8 +321,8 @@
     <!-- React js -->
 
     <!-- Main js -->
-    <script src="js/scripts.js"></script>
-    <script src="js/particles.js"></script>
+    <script src="js/mobile-js/mobile-scripts.js"></script>
+    <script src="js/mobile-js/mobile-particles.js"></script>
     <script src="js/skillbars.js"></script>
     <!-- Main js -->
 

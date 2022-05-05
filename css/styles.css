@@ -1,5 +1,32 @@
-/* Fonts */
+/* Root */
+:root{
+  --ff-primary: "Cyber";
+  --ff-secondary: "Glitch";
+  
+  --fs-xl: clamp(3.5rem, 9vw + 1rem, 12rem);
+  --fs-800: 4rem;
+  --fs-600: 2rem;
+  --fs-500: 1.2rem;
+  --fs-400: 1rem;
+  --fs-300: 0.8rem;
+}
 
+/* Root */
+
+/* Responsive Typography */
+@media (min-width: 40em) {
+  :root {
+    --fs-800: 6rem;
+    --fs-600: 3rem;
+    --fs-500: 2rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+  }
+}
+/* Responsive Typography */
+
+
+/* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 @font-face {
@@ -39,12 +66,12 @@ body::-webkit-scrollbar {
     font-style: italic;
     top: 40%;
     left: 50%;
-    font-family: 'Glitch';
+    font-family: var(--ff-secondary);
 }
 .glitch, .glow {
     color: #dfbfbf;
     position: relative;
-    font-size: 9vw;
+    font-size: var(--fs-xl);
     margin: 70px 200px;
     animation: glitch 5s 5s infinite;
 }
@@ -294,7 +321,7 @@ body::-webkit-scrollbar {
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 0.8vw;
+    font-size: var(--fs-300);
     color: rgba(165, 141, 141, .4);
     text-transform: uppercase;
     letter-spacing: 1em;
@@ -317,6 +344,7 @@ a {
 
 
 /* Sticky Navigation with Cyber buttons */
+
 .et-hero-tabs, .et-slideSticky {
   
     display: flex;
@@ -459,8 +487,6 @@ a {
   z-index: -1;
 }
 
-
-/* tuka prob */
 .et-hero-tab-slider {
     position: absolute;
     width: 0;
@@ -468,7 +494,8 @@ a {
     background: rebeccapurple;
     transition: left 0.3s ease;
 }
-/* tuka prob */
+
+
 @media (min-width: 800px) {
     .et-hero-tabs h1, .et-slideSticky h1 {
         font-size: 3rem;
@@ -478,7 +505,7 @@ a {
    }
     .et-hero-tab {
         font-size: 1.5rem;
-        font-family: 'Cyber';
+        font-family: var(--ff-primary);
    }
 }
 /* Sticky Navigation */
@@ -506,7 +533,7 @@ a {
   .particletxt h1,
   .sliderSticky h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 5vw;
+    font-size: var(--fs-800);
     margin: 0;
     padding-bottom: 0.5rem;
     letter-spacing: 0.3rem;
@@ -520,15 +547,15 @@ a {
   }
   
   .sliderSticky h2 {
-    font-size: 2vw;
+    font-size: var(--fs-600);
     letter-spacing: 0.3rem;
-    font-family: "Glitch", sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 300;
     color: #faebd7;
     z-index: 4;
   }
   .particletxt h3.span {
-    font-size: 2vw;
+    font-size: var(--fs-500);
     letter-spacing: 0.15rem;
     font-family: "ROBOTO", sans-serif;
     font-weight: 300;
@@ -630,9 +657,9 @@ a {
   margin-bottom: 6px;
 }
 .skill label {
-  font-size: 15px;
+  font-size: var(--fs-400);
   line-height: 30px;
-  font-family: 'Raleway';
+  font-family: "Cyber";
 }
 .skill-bar {
   background-color: #222;
@@ -683,7 +710,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Cyber';
+  font-family: var(--ff-primary);
   margin: 0 auto;
   padding: 20px;
   position: relative;
@@ -694,7 +721,7 @@ a {
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Cyber';
+  font-family: var(--ff-primary);
   font-weight: 400;
 }
 
@@ -704,7 +731,7 @@ textarea {
   background-color: #000;
   color: #fff;
   letter-spacing: 1px;
-  font-family: 'Cyber';
+  font-family: var(--ff-primary);
 }
 
 .send-button {
@@ -837,7 +864,7 @@ textarea {
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
+  font: 200 14px 'Cyber', sans-serif;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
@@ -900,7 +927,7 @@ hr {
     height: 55px;
     width: 55px;
     line-height: 55px;
-    font-size: 2rem;
+    font-size: var(--fs-600);
   }
   .social-media-list li:after {
     width: 55px;
@@ -1157,7 +1184,7 @@ body .cybr-btn + .cybr-btn {
 
 .lead{
   color: white;
-  font-size:larger;
+  font-size:var(--fs-400);
 }
 
 .display-4{
@@ -1170,8 +1197,8 @@ body .cybr-btn + .cybr-btn {
 
 
 .header1 {
-  font-family: "Cyber";
-  font-size: 3vw;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
   margin: 0;
   padding-bottom: 0.5rem;
   letter-spacing: 0.3rem;
@@ -1191,3 +1218,11 @@ justify-content: start;
 align-items: flex-start; */
 transform: scale(10%);
 } 
+
+
+/* Disable Navigation css */
+.disable-nav{
+  opacity: 0;
+  pointer-events: none;
+}
+/* Disable Navigation css */

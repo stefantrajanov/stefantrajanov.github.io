@@ -98,7 +98,7 @@ class Slide extends React.Component {
                     {/* <h2 className="slide__headline">{headline}</h2> */}
                     <button className="slide__action reactCybr-btn" data-aos="fade-in" data-aos-duration="2000">
                         <span aria-hidden class="reactCybr-btn__glitch">{button}</span>
-                        <a href={link}>{button}</a></button>
+                        <a href={link} target="_blank">{button}</a></button>
                 </article>
             </li>
         )
