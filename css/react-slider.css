@@ -46,6 +46,8 @@ a:hover{
 	 fill: var(--color-primary);
 	 width: 100%;
 }
+/* Slider Controls */
+
  .slider__controls {
 	 display: flex;
 	 justify-content: center;
@@ -300,5 +302,3 @@ a:hover{
   .reactCybr-btn:nth-of-type(2) {
     --primary-hue: 260;
   }
-  
-  

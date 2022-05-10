@@ -782,7 +782,7 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 25px;
 }
 
 .phone {
@@ -790,7 +790,7 @@ textarea {
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 20px;
 }
 
 .contact-text a {
@@ -1212,17 +1212,10 @@ body .cybr-btn + .cybr-btn {
 }
 
 
-#logo{ 
-/* display: flex;
-justify-content: start;
-align-items: flex-start; */
-transform: scale(10%);
-} 
-
-
 /* Disable Navigation css */
 .disable-nav{
   opacity: 0;
   pointer-events: none;
 }
 /* Disable Navigation css */
+

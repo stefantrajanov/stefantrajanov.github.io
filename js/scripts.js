@@ -98,9 +98,9 @@ window.addEventListener('load', () => {
 
     // disable the preloader, enable scroll and navigation.
 
-    setTimeout(enableScroll, 3000);
-    setTimeout(enableNavigation, 3000);
-    setTimeout(disablePreloader, 3000);
+    setTimeout(enableScroll, 2000);
+    setTimeout(enableNavigation, 2000);
+    setTimeout(disablePreloader, 2000);
 });
 
 // Disable preloader
@@ -116,14 +116,11 @@ function disablePreloader() {
 function disableNavigation() {
     const navigation = document.querySelector('.et-hero-tabs-container');
     navigation.classList.add('disable-nav');
-    console.log("Navigation is disabled");
 }
 
 function enableNavigation() {
     const navigation = document.querySelector('.et-hero-tabs-container');
     navigation.classList.remove('disable-nav');
-    console.log("Navigation is enabled");
-
 }
 
 // Enable and disable Navigation

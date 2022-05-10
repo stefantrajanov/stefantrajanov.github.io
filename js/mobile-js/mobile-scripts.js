@@ -7,12 +7,23 @@ AOS.init({
 });
 
 
+
 // Disable Scroll on Preloader
 document.getElementById("preloader").onwheel = function () {
     disableScroll();
     document.getElementById("status").innerHTML = "disabled";
     document.getElementById("status").className = "disabled";
 };
+
+function disableMobileScroll() {
+    document.body.classList.add('scroll-disable-mobile');
+}
+disableMobileScroll();
+
+function enableMobileScroll() {
+    document.body.classList.remove('scroll-disable-mobile')
+}
+
 
 // Sticky Navigation JS
 class StickyNavigation {
@@ -98,9 +109,10 @@ window.addEventListener('load', () => {
 
     // disable the preloader, enable scroll and navigation.
 
-    setTimeout(enableScroll, 3000);
-    // setTimeout(enableNavigation, 3000);
-    setTimeout(disablePreloader, 3000);
+    setTimeout(enableScroll, 2000);
+    // setTimeout(enableNavigation, 2000);
+    setTimeout(disablePreloader, 2000);
+    setTimeout(enableMobileScroll, 2000);
 });
 
 // Disable preloader
@@ -109,6 +121,7 @@ function disablePreloader() {
     preloader.classList.add('preloader-finish');
 }
 // Disable preloader
+
 
 // Enable and disable Navigation
 

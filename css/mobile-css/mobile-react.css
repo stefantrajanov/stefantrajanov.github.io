@@ -14,6 +14,10 @@
     font-display: swap;
   }
 
+  
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 a{
     color:white;
@@ -30,7 +34,7 @@ a:hover{
 	 display: flex;
 	 /* height: 100%; */
 	 justify-content: center;
-	 /* overflow-x: hidden; */
+	 /* overflow-y: hidden; */
 	 width: 100%;
 }
 
@@ -92,7 +96,7 @@ a:hover{
 	 text-align: center;
 	 transition: opacity calc(var(--base-duration) / 2) var(--base-ease), transform calc(var(--base-duration) / 2) var(--base-ease);
 	 width: var(--slide-size);
-	 z-index: 1;
+	 z-index: 11;
 }
  .slide--previous:hover, .slide--next:hover {
 	 opacity: 0.5;
@@ -165,6 +169,8 @@ a:hover{
 	 transition: transform var(--base-duration) var(--base-ease);
      transform: translateX(-100);
 	 visibility: hidden;
+	 cursor: pointer;
+	 z-index: 50;
 }
  .slide--current .slide__content {
 	 animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
@@ -300,5 +306,3 @@ a:hover{
   .reactCybr-btn:nth-of-type(2) {
     --primary-hue: 260;
   }
-  
-  
