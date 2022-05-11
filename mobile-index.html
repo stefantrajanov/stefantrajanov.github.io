@@ -25,7 +25,13 @@
     <link rel="stylesheet" href="/css/mobile-css/mobile-style.css" />
     <link rel="stylesheet" href="/css/mobile-css/mobile-preloader.css" />
     <!-- Main styles  -->
-
+    <!-- Redirect to normal page -->
+    <script type="text/javascript">
+        if (screen.width >= 699) {
+            document.location = "index.html";
+        }
+    </script>
+    <!-- Redirect to normal page -->
 </head>
 
 <body>
@@ -124,7 +130,7 @@
         <!-- About me -->
 
         <!-- Project slider -->
-        <section data-aos="fade-left">
+        <section id="tab-react">
             <div id="app"></div>
         </section>
         <!-- Project slider -->
@@ -235,14 +241,14 @@
 
                         <hr>
                         <ul class="social-media-list" data-aos="fade-left">
-                            <li><a href="#" target="_blank" class="contact-icon">
+                            <li><a href="https://github.com/stefantrajanov" target="_blank" class="contact-icon">
                                     <i class="fa fa-github" aria-hidden="true"></i></a>
                             </li>
-                            <li><a href="#" target="_blank" class="contact-icon">
-                                    <i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <li><a href="https://www.upwork.com/freelancers/~01336ee25558aa46e7" target="_blank" class="contact-icon">
+                                    <img src="images/upwork-icon.svg" width="50%" height="50%" alt=""></a>
                             </li>
 
-                            <li><a href="#" target="_blank" class="contact-icon">
+                            <li><a href="https://www.instagram.com/stefantrajanov_/" target="_blank" class="contact-icon">
                                     <i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
                         </ul>
@@ -256,25 +262,6 @@
 
             </section>
             <!-- Contact form -->
-
-            <!-- Gumball glitch animation -->
-            <section class="et-slideSticky" id="tab-other" data-aos="slide-up">
-                <div id="bodymovin"></div>
-                <div class="toolbar" style="visibility: hidden;">
-                    <label for="checkbox-handlers" class="checkbox-group">
-                        <input type="checkbox" id="checkbox-handlers" />
-                        <div id="checkbox-handlers-anim"></div>
-                        <span class="checkbox-text">Display Handlers</span>
-                    </label>
-                    <label for="checkbox-characters" class="checkbox-group">
-                        <input type="checkbox" id="checkbox-characters" />
-                        <div id="checkbox-characters-anim"></div>
-                        <span class="checkbox-text">Pause Characters</span>
-                    </label>
-                </div>
-                <div id="glitch-title"></div>
-            </section>
-            <!-- Gumball glitch animation -->
 
     </main>
 
@@ -297,10 +284,6 @@
     </div>
     <!-- Footer icons -->
 
-    <!-- Gumball fun animation script -->
-    <script src="https://labs.nearpod.com/bodymovin/demo/glitcher/glitcher5.js"></script>
-    <!-- Gumball fun animation script -->
-
     <!-- Scroll animation script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Scroll animation script -->
@@ -308,15 +291,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
-    <!-- Boostrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Boostrap -->
-
     <!-- jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- jQuery -->
+
+    <!-- Boostrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Boostrap -->
 
     <!-- Particles library js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->

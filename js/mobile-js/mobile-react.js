@@ -48,7 +48,6 @@ class Slide extends React.Component {
     }
 
     handleMouseMove(event) {
-        if (event.cancelable) event.preventDefault();
         const el = this.slide.current
         const r = el.getBoundingClientRect()
 
@@ -57,18 +56,15 @@ class Slide extends React.Component {
     }
 
     handleMouseLeave(event) {
-        if (event.cancelable) event.preventDefault();
         this.slide.current.style.setProperty('--x', 0)
         this.slide.current.style.setProperty('--y', 0)
     }
 
     handleSlideClick(event) {
-        if (event.cancelable) event.preventDefault();
         this.props.handleSlideClick(this.props.slide.index)
     }
 
     imageLoaded(event) {
-        if (event.cancelable) event.preventDefault();
         event.target.style.opacity = 1
     }
     // onButtonClicked(event) {
@@ -92,8 +88,6 @@ class Slide extends React.Component {
                 onClick={this.handleSlideClick}
                 onMouseMove={this.handleMouseMove}
                 onMouseLeave={this.handleMouseLeave}
-                onTouchMove={this.handleMouseMove}
-                onTouchLeave={this.handleMouseLeave}
             >
                 <div className="slide__image-wrapper" >
                     <img
@@ -196,20 +190,6 @@ class Slider extends React.Component {
                         )
                     })}
                 </ul>
-
-                <div className="slider__controls">
-                    <SliderControl
-                        type="previous"
-                        title="Go to previous slide"
-                        handleClick={this.handlePreviousClick}
-                    />
-
-                    <SliderControl
-                        type="next"
-                        title="Go to next slide"
-                        handleClick={this.handleNextClick}
-                    />
-                </div>
             </div>
         )
     }

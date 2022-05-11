@@ -857,6 +857,7 @@ textarea {
   opacity: 1;  
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  z-index: -11;
 }
 
 .social-media-list li:hover a {
