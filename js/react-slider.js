@@ -6,29 +6,22 @@ const slideData = [
         headline: 'Sintehno',
         button: buttontxt,
         link: 'https://sintehno.com.mk/',
-        src: '/images/Car.png'
+        src: '/images/projectsThumbnail/Car.png'
     },
     {
         index: 1,
-        headline: 'University',
+        headline: 'Lounge Bar',
         button: buttontxt,
-        link: 'https://sintehno.com.mk/',
-        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg'
+        link: '/projects/Loungebar/index.html',
+        src: '/images/projectsThumbnail/LoungeBar.png'
     },
     {
         index: 2,
-        headline: 'University',
+        headline: 'App Promo',
         button: buttontxt,
-        link: 'https://sintehno.com.mk/',
-        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg'
+        link: '/projects/App/index.html',
+        src: '/images/projectsThumbnail/app.png'
     },
-    {
-        index: 3,
-        headline: 'University',
-        button: buttontxt,
-        link: 'https://sintehno.com.mk/',
-        src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg'
-    }
 ]
 
 

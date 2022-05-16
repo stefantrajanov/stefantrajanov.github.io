@@ -69,8 +69,22 @@ $(window).on('beforeunload', function () {
 // Contact form
 
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    if (e.cancelable) e.preventDefault();
+    sendEmail();
+    e.preventDefault();
     e.target.elements.name.value = '';
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
 });
+
+function sendEmail() {
+    Email.send({
+        SecureToken: "a4729e43-7ef0-4f0e-8253-c4ad97b87dae",
+        To: 'trajanovstefan@yahoo.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form from" + " " + document.getElementById("name").value,
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert(message)
+    );
+}

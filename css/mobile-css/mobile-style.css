@@ -858,6 +858,8 @@
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  z-index: -11;
+
   }
   
   .social-media-list li:hover a {
@@ -1184,7 +1186,22 @@
     transform: translate3d(0, -10px, 22px);
     color: #ff0266;
   }
+
+  .protofolio-header{
+    text-align: center;
+    font-size: var(--fs-600);
+    font-family: 'Cyber';
+    opacity: 0.5;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    font-style: italic;
+    letter-spacing: 5px;
+  }
   
+  .protofolio-header:hover{
+    transform: translate3d(0, -10px, 22px);
+    color: #03dac6;
+  }
   
   #logo{ 
   /* display: flex;

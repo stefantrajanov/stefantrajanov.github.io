@@ -1212,6 +1212,22 @@ body .cybr-btn + .cybr-btn {
   color: #ff0266;
 }
 
+.protofolio-header{
+  text-align: start;
+  font-size: 2.4rem;
+  font-family: 'Cyber';
+  opacity: 0.5;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+
+.protofolio-header:hover{
+  transform: translate3d(0, -10px, 22px);
+  color: #03dac6;
+}
+
 
 /* Disable Navigation css */
 .disable-nav{
@@ -1219,4 +1235,5 @@ body .cybr-btn + .cybr-btn {
   pointer-events: none;
 }
 /* Disable Navigation css */
+
 

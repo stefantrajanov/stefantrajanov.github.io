@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Scrolling animations -->
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <!-- Favicons -->
+
     <!-- Boostrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Boostrap icons -->
@@ -25,9 +32,10 @@
     <link rel="stylesheet" href="/css/mobile-css/mobile-style.css" />
     <link rel="stylesheet" href="/css/mobile-css/mobile-preloader.css" />
     <!-- Main styles  -->
+
     <!-- Redirect to normal page -->
     <script type="text/javascript">
-        if (screen.width >= 699) {
+        if (screen.width > 699) {
             document.location = "index.html";
         }
     </script>
@@ -61,33 +69,6 @@
     <!-- Banner -->
 
     <section class="et-hero-tabs" id="stickyNavigation"></section>
-    <!-- Sticky Navigation -->
-    <!-- <div class="et-hero-tabs-container">
-        <a class="et-hero-tab" style="transform: scaleX(-1);" href="#tab-es6">
-            _ƎM TUOꓭA
-            <span aria-hidden class="et-hero__glitch">About me_</span>
-            <span aria-hidden class="et-hero__tag">13N</span></a>
-        <a class="et-hero-tab" href="#tab-slider">
-            Portofolio
-            <span aria-hidden class="et-hero__glitch">Portofolio_</span>
-            <span aria-hidden class="et-hero__tag">13N</span></a></a>
-        <a class="et-hero-tab" style="transform: scaleX(-1);" href="#tab-react">
-            _Ƨ⅃⅃IꓘƧ
-            <span aria-hidden class="et-hero__glitch">Skills_</span>
-            <span aria-hidden class="et-hero__tag">13N</span></a></a>
-        <a class="et-hero-tab" href="#tab-angular">
-            Contact
-            <span aria-hidden class="et-hero__glitch">Contact_</span>
-            <span aria-hidden class="et-hero__tag">13N</span></a></a>
-        <a class="et-hero-tab" style="transform: scaleX(-1);" href="#tab-other">
-            _ӘO⅃ꓭ
-            <span aria-hidden class="et-hero__glitch">Blog_</span>
-            <span aria-hidden class="et-hero__tag">13N</span></a></a>
-        <span class="et-hero-tab-slider"></span>
-    </div>
-    </section> -->
-    <!-- Sticky Navigation -->
-
     <!-- About me -->
 
     <main class="et-main">
@@ -119,9 +100,12 @@
             </h3>
             <div class="container my-5">
                 <p class="lead" style="color: white;" data-aos="fade-in">
-                    Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web.
+                    Hello my name is Stefan and I am a web developer who is happy to help you with any sort of problem to fix or idea to realise!
                 </p>
-                <p class="lead" data-aos="fade-in">Over the years I had many opportunities to work in a vast spectrum of web technologies, where from I gathered a large amount of various experience in
+
+                <p class="lead" style="color: white;" data-aos="fade-in">
+                    Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web.
+                    Over the years I had many opportunities to work in a vast spectrum of web technologies, where from I gathered a large amount of various experience in
                     web development.
                 </p>
                 <p class="lead" data-aos="fade-in">I currently work remotely with freelance clients and always open for new opportunities.</p>
@@ -130,14 +114,15 @@
         <!-- About me -->
 
         <!-- Project slider -->
-        <section id="tab-react">
+        <section data-aos="fade-left">
+            <h4 class="protofolio-header">Some of What I can do</h4>
             <div id="app"></div>
         </section>
         <!-- Project slider -->
 
         <!-- Skillbars -->
 
-        <section id=" tab-react">
+        <section>
 
             <div class="container">
                 <div class="row row-cols-2">
@@ -148,7 +133,7 @@
                             <p class="lead" data-aos="fade-right" style="color: white;">
                                 I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development and
                                 back-end
-                                development, HTML, CSS, JS, Wordpress.
+                                development, my other skills are HTML, CSS, JS, Wordpress.
                             </p>
                             <p class="lead" data-aos="fade-right">I also have full-stack developer experience with popular open-source CMS like WordPress.</p>
                             <p class="lead" data-aos="fade-right">For any more details you can contact me and we can discuss it easily, even through the phone.</p>
@@ -169,7 +154,7 @@
                                 </div>
                             </div>
                             <div class="skill">
-                                <label>Python</label>
+                                <label>JavaScript</label>
                                 <div class="skill-bar">
                                     <div data-level="80" class="level python"></div>
                                 </div>
@@ -192,7 +177,7 @@
         <!-- Divider -->
 
         <!-- Contact form -->
-        <section id="tab-angular">
+        <section>
             <section id="contact" data-aos="fade-in">
 
                 <h1 class="section-header" data-aos="fade-in">Contact</h1>
@@ -251,6 +236,10 @@
                             <li><a href="https://www.instagram.com/stefantrajanov_/" target="_blank" class="contact-icon">
                                     <i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
+                            <li><a href="https://www.linkedin.com/in/stefan-trajanov/" target="_blank" class="contact-icon">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+
                         </ul>
                         <hr>
 
@@ -264,26 +253,6 @@
             <!-- Contact form -->
 
     </main>
-
-
-    <!-- Footer icons -->
-    <div class="container my-5">
-        <div class="d-flex justify-content-center">
-            <footer>
-
-                <!-- Linkedin -->
-                <a class="btn btn-link btn-lg" href="https://www.linkedin.com/in/stefan-trajanov/" style="color: white;" role="button"><i class="bi bi-linkedin"></i></a>
-
-                <a class="btn btn-link btn-lg" href="https://www.upwork.com/freelancers/~01336ee25558aa46e7" style="color: white;" role="button"><img src="images/upwork-icon.svg" width="50%"
-                        height="50%" alt=""></a>
-
-                <!-- Github -->
-                <a class="btn btn-link btn-lg" href="https://github.com/stefantrajanov" style="color: white;" role="button"><i class="bi bi-github"></i></a>
-            </footer>
-        </div>
-    </div>
-    <!-- Footer icons -->
-
     <!-- Scroll animation script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Scroll animation script -->
@@ -313,7 +282,7 @@
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="js/mobile-js/mobile-react.js"></script>
+    <script type="text/babel" src="js/react-slider.js"></script>
     <!-- React js -->
 
     <!-- Main js -->
